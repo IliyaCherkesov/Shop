@@ -22,7 +22,81 @@ public class Main
 
     public static void main(String[] args)
     {
-
+        initializeStore();
+        Scanner scanner = new Scanner(System.in);
+        while (true)
+        {
+            boolean doBreak = false;
+            printMenu();
+            String str = scanner.nextLine();
+            switch(str.trim()) {
+                case "1":
+                    System.out.println("List of the available products");
+                    for (Product product : store.listProducts()) {
+                        System.out.println(product);
+                    }
+                    break;
+                case "2":
+                    System.out.println("Add product to cart");
+                    System.out.println("Please enter product ID:");
+                    String productId = scanner.nextLine();
+                    Product product = store.getProductById(productId);
+                    if (product != null) {
+                        store.addProductToCart(product);
+                        System.out.println("Product \"" + product.getName() + "\" added to cart");
+                    } else {
+                        System.out.println("Product not found");
+                    }
+                    break;
+                case "3":
+                    System.out.println("Remove product from cart");
+                    System.out.println("Please enter product ID:");
+                    productId = scanner.nextLine();
+                    product = store.getProductById(productId);
+                    if (product != null) {
+                        store.removeProductFromCart(product);
+                        System.out.println("Product \"" + product.getName() + "\" removed from cart");
+                    } else {
+                        System.out.println("Product not found");
+                    }
+                    break;
+                case "4":
+                    System.out.println("Checkout");
+                    store.checkout();
+                    System.out.println("Checkout completed");
+                    break;
+                case "5":
+                    System.out.println("List orders");
+                    store.outListOrders();
+                    break;
+                case "6":
+                    if (store.isSingleOrder()) {
+                        Order order = store.getOrders().get(0);
+                        System.out.println("Order ID: " + order.getId());
+                        System.out.println("Order status: " + order.getStatus().toString());
+                        break;
+                    } else {
+                        System.out.println("Get Order status");
+                        System.out.println("Please enter order ID:");
+                        String orderId = scanner.nextLine();
+                        Order order = store.getOrderById(orderId);
+                        if (order != null) {
+                            System.out.println("Order ID: " + order.getId());
+                            System.out.println("Order status: " + order.getStatus());
+                        } else {
+                            System.out.println("Order not found");
+                        }
+                    }
+                    break;
+                default:
+                    doBreak = true;
+                    break;
+            }
+            if (doBreak) {
+                break;
+            }
+        }
+        scanner.close();
     }
 
     private static void printMenu()

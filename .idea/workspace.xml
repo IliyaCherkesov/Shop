@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea890cd0-265d-4f88-a778-79ced14fbf60" name="Changes" comment="Improved functionality according to task requirements">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/booklibrary.MainTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/booklibrary.MainTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/booklibrary.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/booklibrary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-booklibrary.MainTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-booklibrary.MainTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/booklibrary/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/booklibrary/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/booklibrary/model/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/booklibrary/model/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/booklibrary/MainTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/booklibrary/utils/ConsoleInputMock.java" beforeDir="false" />
+    <list default="true" id="ea890cd0-265d-4f88-a778-79ced14fbf60" name="Changes" comment="Created body of a project, with classes that would be used in future.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/myshop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myshop/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/myshop/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/myshop/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +57,7 @@
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="48631900-f486-4303-85b5-66d5c8f5f062" />
-        <option name="url" value="https://github.com/IliyaCherkesov/library.git" />
+        <option name="url" value="https://github.com/IliyaCherkesov/Shop" />
       </UrlAndAccount>
     </option>
   </component>
@@ -235,7 +224,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705512063511</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Created body of a project, with classes that would be used in future.">
+      <option name="closed" value="true" />
+      <created>1707219253227</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707219253227</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Created body of a project, with classes that would be used in future.">
+      <option name="closed" value="true" />
+      <created>1707219261172</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1707219261172</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,6 +273,7 @@
     <MESSAGE value="First commit. User output and library core" />
     <MESSAGE value="Second commit. The job is done!!" />
     <MESSAGE value="Improved functionality according to task requirements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved functionality according to task requirements" />
+    <MESSAGE value="Created body of a project, with classes that would be used in future." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created body of a project, with classes that would be used in future." />
   </component>
 </project>
